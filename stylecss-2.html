@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <style>
+      :root {
+        --bg-black: #0D1117;
+        --bg-blue: blue;
+        --bg-cyanblue: #00f0ff;
+        --bg-white: white;
+        --bg-darkcharcoal: #21262D;
+        --bg-gunmetalgray: #30363D;
+        --bg-richblack: #161B22;
+      }
+      body {
+        background-color: var(--bg-black);
+      }
+      .th {
+        text-align: right;
+        position: fixed;
+        top: 0;
+        height: 9vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        z-index: 1000;
+        border: 1px solid black;
+        box-shadow: 0 0 25px cyan;
+      }
+      .th .large {
+        color: var(--bg-cyanblue);
+        margin-right: 10px;
+        font-size: 28px;
+      }
+      .th .small {
+        color: var(--bg-cyanblue);
+        margin-right: 10px;
+        font-size: 28px;
+      }
+      .back-btn {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        font-size: 30px;
+        background-color: var(--bg-darkcharcoal);
+        border: 1px solid var(--bg-gunmetalgray);
+        color: var(--bg-white);
+        font-weight: 600;
+      }
+      .card {
+          height: 80vh;
+          width: 91%;
+          border: 1px solid var(--bg-gunmetalgray);
+          background-color: var(--bg-richblack);
+          margin: 20px auto;
+          border-radius: 20px;
+          box-shadow: 0 0 30px rgba(0, 240, 255, 0.4);
+      }
+      .container {
+        padding-top: 10vh;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+   <div class="th">
+     <button class="back-btn" id="back">Back</button>
+     <span class="large">Fantom</span><br>
+     <span class="small">Trace</span>
+   </div>
+    <div class="container">
+      <div class="card">
+        
+      </div>
+    </div>
+    <script>
+      let back = document.getElementById("back");
+      back.addEventListener("click" , function(){
+        location.href="chapter-1.html";
+      })
+    </script>
+  </body>
+</html>
