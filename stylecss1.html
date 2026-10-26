@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fantom Trace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+      }
+      .head {
+        top: 0;
+        margin: 0;
+        padding: 0;
+        left: 0;
+        text-align: right;
+        position: fixed;
+        background-color: black;
+        height: 10vh;
+        width: 100%;
+        box-shadow: 0 0 25px cyan;
+      }
+      .back-btn {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        height: 6dvh;
+        width: 13vh;
+        background-color: black;
+        font-size: 24px;
+        color: red;
+        box-shadow: 0 0 20px white;
+        border: 3px solid;
+        border-radius: 10px;
+        animation: bordercolor 10s infinite;
+      }
+      @keyframes bordercolor {
+        0% {
+          border-color: blue;
+        }
+        50% {
+          border-color: red;
+        }
+        75% {
+          border-color: cyan;
+        }
+        100% {
+          border-color: lime;
+        }
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        margin-top: 6px;
+      }
+      .large {
+        color: red;
+        font-size: 26px;
+      }
+      .small {
+        color: white;
+        font-size: 24px;
+      }
+      .container {
+        margin-top: 15vh;
+      }
+      .card {
+        height: 80dvh;
+        width: 87%;
+        border: 5px solid;
+        border-radius: 40px;
+        margin: 20px auto;
+        box-sizing: border-box;
+        background-color: black;
+        box-shadow: 0 0 20px red;
+        margin-bottom: 30px;
+        animation: bordercolor 10s infinite;
+      }
+      @keyframes bordercolor {
+        0% {
+          border-color: red;
+        }
+        25% {
+          border-color: lime;
+        }
+        50% {
+          border-color: blue;
+        }
+        75% {
+          border-color: cyan;
+        }
+        100% {
+          border-color: green;
+        }
+      }
+      .small-box {
+        height: 12.5vh;
+        width: 90%;
+        margin: 10px auto;
+        border: 3px solid red;
+        border-radius: 5px;
+        box-shadow: 0 0 20px cyan;
+        animation: bordercolor 5s infinite;
+      }
+      @keyframes bordercolor {
+        0% {
+          border-color: cyan;
+        }
+        50% {
+          border-color: red;
+        }
+        100% {
+          border-color: lime;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <button class="back-btn">
+        Back
+      </button>
+      <div class="box">
+        <span class="large">
+          
+        </span>
+        <span class="small">
+        
+        </span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="small-box">
+          
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="small-box">
+          
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
